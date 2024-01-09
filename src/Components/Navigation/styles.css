@@ -1,0 +1,42 @@
+.navContainer {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.list {
+    list-style: none;
+    text-align: center;
+}
+
+.listItem {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.listItem a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    font-weight: bold;
+}
+
+.listItem a:hover,
+.listItem a:focus {
+    color: #20d763;
+}
+
+.listItem:last-of-type {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .navContainer {
+        padding: 30px;
+    }
+
+    .listItem {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1400px) {}

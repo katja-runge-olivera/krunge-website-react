@@ -1,0 +1,46 @@
+.root {
+    background-color: #f2f3fb;
+    padding: 40px 20px;
+}
+
+.mainTitle {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 125%;
+    margin-bottom: 40px;
+}
+
+.contentContainer {
+    max-width: 1120px;
+    margin-inline: auto;
+
+}
+
+.contentText {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+@media (min-width: 768px) {
+    .root {
+        padding: 80px;
+    }
+
+    .mainTitle {
+        font-size: 56px;
+    }
+
+    .contentText {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .root {
+        padding: 100px 80px;
+    }
+
+    .mainTitle {
+        font-size: 64px;
+    }
+}
