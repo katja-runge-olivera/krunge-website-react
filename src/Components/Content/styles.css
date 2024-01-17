@@ -3,6 +3,14 @@
     padding: 40px 20px;
 }
 
+.root>div {
+    margin-bottom: 40px;
+}
+
+.root div:last-of-type {
+    margin-bottom: 0;
+}
+
 .mainTitle {
     font-size: 38px;
     font-weight: bold;
@@ -10,10 +18,10 @@
     margin-bottom: 40px;
 }
 
-.contentContainer {
-    max-width: 1120px;
+.contentContainer,
+.columnsContainer {
+    max-width: 1440px;
     margin-inline: auto;
-
 }
 
 .contentText {
@@ -21,9 +29,35 @@
     line-height: 120%;
 }
 
+.columnsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.column {
+    box-sizing: border-box;
+}
+
+.columnImage {
+    width: 100%;
+}
+
+.columnText {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 @media (min-width: 768px) {
     .root {
         padding: 80px;
+    }
+
+    .root>div {
+        margin-bottom: 80px;
     }
 
     .mainTitle {
@@ -33,6 +67,11 @@
     .contentText {
         font-size: 38px;
     }
+
+    .columnText {
+        font-size: 32px;
+    }
+
 }
 
 @media (min-width: 1400px) {
@@ -42,5 +81,9 @@
 
     .mainTitle {
         font-size: 64px;
+    }
+
+    .columnsContainer {
+        gap: 40px;
     }
 }
