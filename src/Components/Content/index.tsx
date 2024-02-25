@@ -1,10 +1,12 @@
 import React from "react";
 
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 type Column = {
     image: string;
     text: string;
+    link: string;
 }
 
 type ContentProps = {
@@ -25,7 +27,7 @@ export const Content = ({ columns }: ContentProps) => (
             <div className="columnsContainer">
                 {columns.map((column, index) => (
                     <div key={index} className="column">
-                        <img alt="" src={column.image} className="columnImage" />
+                        <Link to={column.link}><img alt="" src={column.image} className="columnImage" /></Link>
                         <p className="columnText">{column.text}</p>
                     </div>
                 ))}
